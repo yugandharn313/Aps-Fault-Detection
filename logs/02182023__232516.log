@@ -1,0 +1,8 @@
+[2023-02-18 23:25:34,745] 19 root -INFO - Exporting collection data as pandas dataframe
+[2023-02-18 23:25:41,270] 9 root -INFO - Reading data from database :aps and collection :sensor
+[2023-02-18 23:25:42,891] 11 root -INFO - found columns:Index([], dtype='object')
+[2023-02-18 23:25:44,281] 14 root -INFO - Row and columns in df: (0, 0)
+[2023-02-18 23:25:46,534] 25 root -INFO - Save data in feature store
+[2023-02-18 23:25:49,627] 31 root -INFO - Create feature store folder if not available
+[2023-02-18 23:25:52,317] 35 root -INFO - Save df to feature store folder
+[2023-02-18 23:25:58,318] 40 root -INFO - split dataset into train and test set

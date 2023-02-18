@@ -20,10 +20,11 @@ class DataIngestionConfig:
         self.feature_store_file_path=os.path.join(self.dataingestion_dir,"feature_store")
         self.train_file_path=os.path.join(self.dataingestion_dir,"dataset",TRAIN_FILE_NAME)
         self.test_file_path=os.path.join(self.dataingestion_dir,"dataset",TEST_FILE_NAME)
+        self.test_size = 0.2
 
     def to_dict(self,)->dict:
         try:
-            pass
+            return self.__dict__
         except Exception as e:
             raise SensorException(e,sys)
 
