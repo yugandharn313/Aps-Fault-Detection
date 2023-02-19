@@ -1,0 +1,46 @@
+[2023-02-19 14:16:51,427] 15 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-19 14:16:51,428] 22 root -INFO - Exporting collection data as pandas dataframe
+[2023-02-19 14:16:51,428] 9 root -INFO - Reading data from database :aps and collection :sensor
+[2023-02-19 14:16:59,140] 11 root -INFO - found columns:Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2023-02-19 14:16:59,869] 14 root -INFO - Row and columns in df: (36188, 171)
+[2023-02-19 14:16:59,871] 28 root -INFO - Save data in feature store
+[2023-02-19 14:17:01,192] 32 root -INFO - Create feature store folder if not available
+[2023-02-19 14:17:01,193] 38 root -INFO - Save df to feature store folder
+[2023-02-19 14:17:06,913] 42 root -INFO - split dataset into train and test set
+[2023-02-19 14:17:08,639] 46 root -INFO - create dataset directory folder if not available
+[2023-02-19 14:17:08,640] 51 root -INFO - Save df to feature store folder
+[2023-02-19 14:17:13,083] 63 root -INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/feature_store', train_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/dataset/test.csv')
+[2023-02-19 14:17:14,166] 22 root -INFO - Exporting collection data as pandas dataframe
+[2023-02-19 14:17:14,167] 9 root -INFO - Reading data from database :aps and collection :sensor
+[2023-02-19 14:17:23,045] 11 root -INFO - found columns:Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2023-02-19 14:17:23,761] 14 root -INFO - Row and columns in df: (36188, 171)
+[2023-02-19 14:17:23,761] 28 root -INFO - Save data in feature store
+[2023-02-19 14:17:25,200] 32 root -INFO - Create feature store folder if not available
+[2023-02-19 14:17:25,201] 38 root -INFO - Save df to feature store folder
+[2023-02-19 14:17:31,031] 42 root -INFO - split dataset into train and test set
+[2023-02-19 14:17:32,904] 46 root -INFO - create dataset directory folder if not available
+[2023-02-19 14:17:32,905] 51 root -INFO - Save df to feature store folder
+[2023-02-19 14:17:37,487] 63 root -INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/feature_store', train_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/02192023__141651/data_ingestion/dataset/test.csv')
+[2023-02-19 14:17:38,700] 16 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-19 14:17:38,701] 88 root -INFO - Reading base dataframe
+[2023-02-19 14:17:44,496] 91 root -INFO - Replace na value in base df
+[2023-02-19 14:17:44,497] 93 root -INFO - Drop null values colums from base df
+[2023-02-19 14:17:46,185] 96 root -INFO - Reading train dataframe
+[2023-02-19 14:17:46,993] 98 root -INFO - Reading test dataframe
+[2023-02-19 14:17:47,222] 101 root -INFO - Drop null values colums from train df
+[2023-02-19 14:17:47,271] 103 root -INFO - Drop null values colums from test df
+[2023-02-19 14:18:07,254] 112 root -INFO - Is all required columns present in train df
+[2023-02-19 14:18:09,691] 114 root -INFO - Is all required columns present in test df
+[2023-02-19 14:18:20,058] 118 root -INFO - As all column are available in train df hence detecting data drift
+[2023-02-19 14:18:59,015] 121 root -INFO - As all column are available in test df hence detecting data drift
+[2023-02-19 14:19:06,811] 125 root -INFO - Write reprt in yaml file
