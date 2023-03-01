@@ -1,0 +1,74 @@
+[2023-03-01 16:37:35,934] 15 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-01 16:37:35,935] 22 root -INFO - Exporting collection data as pandas dataframe
+[2023-03-01 16:37:35,935] 12 root -INFO - Reading data from database :aps and collection :sensor
+[2023-03-01 16:37:47,214] 14 root -INFO - found columns:Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2023-03-01 16:37:48,509] 17 root -INFO - Row and columns in df: (36188, 171)
+[2023-03-01 16:37:48,510] 28 root -INFO - Save data in feature store
+[2023-03-01 16:37:50,372] 32 root -INFO - Create feature store folder if not available
+[2023-03-01 16:37:50,373] 38 root -INFO - Save df to feature store folder
+[2023-03-01 16:37:55,735] 42 root -INFO - split dataset into train and test set
+[2023-03-01 16:37:58,417] 46 root -INFO - create dataset directory folder if not available
+[2023-03-01 16:37:58,418] 51 root -INFO - Save df to feature store folder
+[2023-03-01 16:38:03,460] 63 root -INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/feature_store', train_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/dataset/test.csv')
+[2023-03-01 16:38:05,183] 22 root -INFO - Exporting collection data as pandas dataframe
+[2023-03-01 16:38:05,183] 12 root -INFO - Reading data from database :aps and collection :sensor
+[2023-03-01 16:38:14,012] 14 root -INFO - found columns:Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2023-03-01 16:38:14,880] 17 root -INFO - Row and columns in df: (36188, 171)
+[2023-03-01 16:38:14,881] 28 root -INFO - Save data in feature store
+[2023-03-01 16:38:16,426] 32 root -INFO - Create feature store folder if not available
+[2023-03-01 16:38:16,427] 38 root -INFO - Save df to feature store folder
+[2023-03-01 16:38:21,732] 42 root -INFO - split dataset into train and test set
+[2023-03-01 16:38:23,862] 46 root -INFO - create dataset directory folder if not available
+[2023-03-01 16:38:23,863] 51 root -INFO - Save df to feature store folder
+[2023-03-01 16:38:28,877] 63 root -INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/feature_store', train_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03012023__163735/data_ingestion/dataset/test.csv')
+[2023-03-01 16:38:30,221] 17 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-01 16:38:30,222] 89 root -INFO - Reading base dataframe
+[2023-03-01 16:38:36,667] 92 root -INFO - Replace na value in base df
+[2023-03-01 16:38:36,668] 94 root -INFO - Drop null values colums from base df
+[2023-03-01 16:38:38,388] 97 root -INFO - Reading train dataframe
+[2023-03-01 16:38:39,276] 99 root -INFO - Reading test dataframe
+[2023-03-01 16:38:39,495] 102 root -INFO - Drop null values colums from train df
+[2023-03-01 16:38:39,549] 104 root -INFO - Drop null values colums from test df
+[2023-03-01 16:38:57,044] 113 root -INFO - Is all required columns present in train df
+[2023-03-01 16:38:57,045] 115 root -INFO - Is all required columns present in test df
+[2023-03-01 16:38:57,045] 119 root -INFO - As all column are available in train df hence detecting data drift
+[2023-03-01 16:39:02,681] 122 root -INFO - As all column are available in test df hence detecting data drift
+[2023-03-01 16:39:04,653] 126 root -INFO - Write reprt in yaml file
+[2023-03-01 16:39:04,835] 131 root -INFO - Data validation artifact: DataValidationArtifact(report_file_path='/config/workspace/artifact/03012023__163735/data validation/report.yaml')
+[2023-03-01 16:39:06,709] 68 root -INFO - Before resampling in training set Input: (28950, 170) Target:(28950,)
+[2023-03-01 16:40:35,565] 70 root -INFO - After resampling in training set Input: (56136, 170) Target:(56136,)
+[2023-03-01 16:40:35,567] 72 root -INFO - Before resampling in testing set Input: (7238, 170) Target:(7238,)
+[2023-03-01 16:40:54,017] 74 root -INFO - After resampling in testing set Input: (14072, 170) Target:(14072,)
+[2023-03-01 16:40:54,311] 41 root -INFO - Entered the save_object method of utils
+[2023-03-01 16:40:54,319] 45 root -INFO - Exited the save_object method of utils
+[2023-03-01 16:40:54,319] 41 root -INFO - Entered the save_object method of utils
+[2023-03-01 16:40:54,321] 45 root -INFO - Exited the save_object method of utils
+[2023-03-01 16:40:54,321] 104 root -INFO - Data transformation object DataTransformationArtifact(transform_object_path='/config/workspace/artifact/03012023__163735/data_transformation/transformer/transformer.pkl', transformed_train_path='/config/workspace/artifact/03012023__163735/data_transformation/transformed/train.npz', transformed_test_path='/config/workspace/artifact/03012023__163735/data_transformation/transformed/test.npz', target_encoder_path='/config/workspace/artifact/03012023__163735/data_transformation/target_encoder/target_encoder.pkl')
+[2023-03-01 16:40:54,325] 18 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-01 16:40:54,325] 45 root -INFO - Loading train and test array.
+[2023-03-01 16:40:54,409] 49 root -INFO - Splitting input and target feature from both train and test arr.
+[2023-03-01 16:40:54,410] 53 root -INFO - Train the model
+[2023-03-01 16:50:23,346] 56 root -INFO - Calculating f1 train score
+[2023-03-01 16:50:23,651] 60 root -INFO - Calculating f1 test score
+[2023-03-01 16:50:23,846] 64 root -INFO - train score:1.0 and tests score 0.9765054579628425
+[2023-03-01 16:50:23,846] 66 root -INFO - Checking if our model is underfitting or not
+[2023-03-01 16:50:23,847] 71 root -INFO - Checking if our model is overfiiting or not
+[2023-03-01 16:50:23,847] 78 root -INFO - Saving mode object
+[2023-03-01 16:50:23,847] 41 root -INFO - Entered the save_object method of utils
+[2023-03-01 16:50:23,988] 45 root -INFO - Exited the save_object method of utils
+[2023-03-01 16:50:23,990] 82 root -INFO - Prepare the artifact
+[2023-03-01 16:50:23,990] 85 root -INFO - Model trainer artifact: ModelTrainerArtifact(model_path='/config/workspace/artifact/03012023__163735/model_trainer/model/model.pkl', f1_train_score=1.0, f1_test_score=0.9765054579628425)
+[2023-03-01 16:50:23,993] 19 root -INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-01 16:50:23,993] 35 root -INFO - if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[2023-03-01 16:50:23,994] 46 root -INFO - Finding location of transformer model and target encoder
+[2023-03-01 16:50:23,994] 51 root -INFO - Previous trained objects of transformer, model and target encoder
